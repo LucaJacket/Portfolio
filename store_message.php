@@ -2,11 +2,11 @@
 
 session_start();
 
-$servername = "localhost";
-$username = "root";
-$dbpass = "";
-$dbname = "portfolio";
-$table = "users_email";
+$servername = "***";
+$username = "***";
+$dbpass = "***";
+$dbname = "***";
+$table = "***";
 
 $conn = new mysqli($servername, $username, $dbpass, $dbname);
 if ($conn->connect_error) {
