@@ -14,7 +14,6 @@ function menu() {
     sideback.style.transition = "opacity 0.3s ease, top 0s 0.3s ease";
     sideback.style.top = "-10000px";
     sideback.style.opacity = "0";
-    // sideback.style.display = "none";
     f.style.transform = "scaleX(1)";
     s.style.transform = "scaleX(1)";
     t.style.transform = "scaleX(1)";
@@ -25,7 +24,6 @@ function menu() {
     sideback.style.transition = "opacity 0.3s ease";
     sideback.style.top = "0";
     sideback.style.opacity = "0.75";
-    // sideback.style.display = "block";
     var tr = (m.offsetHeight - s.offsetHeight) / 2;
     f.style.transform = "translateY(" + tr + "px) rotateZ(45deg)";
     s.style.transform = "scaleX(0)";
