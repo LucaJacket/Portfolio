@@ -39,7 +39,7 @@ $extra_large: "min-width: 1200px"
 
 /* Responsive containers (full till device breakpoint exluded, then fixed width) */
 
-.container
+[class*="container"]
   @include xs
     width: 100%
   @include s
@@ -50,9 +50,9 @@ $extra_large: "min-width: 1200px"
     width: 960px
   @include xl
     width: 1140px
+
+.container
   &-m
-    @include xs
-      width: 100%
     @include s
       width: 100%
     @include m
@@ -62,8 +62,6 @@ $extra_large: "min-width: 1200px"
     @include xl
       width: 1140px
   &-l
-    @include xs
-      width: 100%
     @include s
       width: 100%
     @include l
@@ -71,8 +69,6 @@ $extra_large: "min-width: 1200px"
     @include xl
       width: 1140px
   &-xl
-    @include xs
-      width: 100%
     @include s
       width: 100%
     @include xl
@@ -82,82 +78,72 @@ $extra_large: "min-width: 1200px"
 
 /* Responsive display flex -> none (flex till device breakpoint exluded) */
 
-.flex
+[class*="flex"]
   display: flex
+
+.flex
   &-s
-    display: flex
     @include s
       display: none
   &-m
-    display: flex
     @include m
       display: none
   &-l
-    display: flex
     @include l
       display: none
   &-xl
-    display: flex
     @include xl
       display: none
 
 /* Responsive display block -> none (block till device breakpoint exluded) */
 
-.block
+[class*="block"]
   display: block
+
+.block
   &-s
-    display: block
     @include s
       display: none
   &-m
-    display: block
     @include m
       display: none
   &-l
-    display: block
     @include l
       display: none
   &-xl
-    display: block
     @include xl
       display: none
 
 /* Responsive display none -> flex, block (none till device breakpoint exluded) */
 
-.none
+[class*="none"]
   display: none
+
+.none
   &-flex
     &-s
-      display: none
       @include s
         display: flex
     &-m
-      display: none
       @include m
         display: flex
     &-l
-      display: none
       @include l
         display: flex
     &-xl
-      display: none
       @include xl
         display: flex
   &-block
     &-s
-      display: none
       @include s
         display: block
     &-m
-      display: none
       @include m
         display: block
     &-l
-      display: none
       @include l
         display: block
     &-xl
-      display: none
       @include xl
         display: block
 
