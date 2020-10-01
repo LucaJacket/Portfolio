@@ -7,13 +7,6 @@ var sidelinks = document.getElementById('sidelinks');
 var sideback = document.getElementById('sideback');
 var nav = document.getElementsByClassName('nav')[0];
 
-// var test = document.getElementById('test');
-//
-// test.innerHTML = - sidelinks.offsetHeight + "px";
-
-// sidelinks.style.top = - sidelinks.offsetHeight + "px";
-// sideback.style.top = - sideback.offsetHeight + "px";
-
 function menu() {
   if (open) {
     // Close
